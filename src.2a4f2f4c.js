@@ -11,4 +11,4 @@ module.exports=[{id:"XWaQXcbk0",name:"Картофель, запеченный �
 },{}],"Focm":[function(require,module,exports) {
 "use strict";require("./styles.css");var e=o(require("./templates/menu.hbs")),t=o(require("./templates/menu.json"));function o(e){return e&&e.__esModule?e:{default:e}}const s={LIGHT:"light-theme",DARK:"dark-theme"},c={menuList:document.querySelector(".js-menu"),toggleButton:document.querySelector(".theme-switch__toggle"),body:document.body};function l(e){e.target.checked?n(s.DARK,s.LIGHT):n(s.LIGHT,s.DARK)}function n(e,t){c.body.classList.add(e),c.body.classList.remove(t),localStorage.setItem("Theme",e)}c.menuList.insertAdjacentHTML("beforeend",(0,e.default)(t.default)),c.body.classList.add(localStorage.getItem("Theme")?localStorage.getItem("Theme"):s.LIGHT),c.toggleButton.checked=localStorage.getItem("Theme")===s.DARK,c.toggleButton.addEventListener("click",l);
 },{"./styles.css":"Tnu0","./templates/menu.hbs":"dgbP","./templates/menu.json":"bpEP"}]},{},["Focm"], null)
-//# sourceMappingURL=/parcel-project-template/src.2a4f2f4c.js.map
+//# sourceMappingURL=/goit-js-hw-10/src.2a4f2f4c.js.map
