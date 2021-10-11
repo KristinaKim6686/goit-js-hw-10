@@ -13,11 +13,11 @@ const refs = {
     toggleButton: document.querySelector('.theme-switch__toggle'),
     body: document.body,
 };
-
+const theme = localStorage.getItem('Theme');
    ( function () {
         refs.menuList.insertAdjacentHTML('beforeend', createMenu(menu));
-       refs.body.classList.add(localStorage.getItem('Theme') ? localStorage.getItem('Theme'):Theme.LIGHT);
-       refs.toggleButton.checked = localStorage.getItem('Theme') === Theme.DARK;
+       refs.body.classList.add(theme ? theme:Theme.LIGHT);
+       refs.toggleButton.checked = theme === Theme.DARK;
     })();
 
 
